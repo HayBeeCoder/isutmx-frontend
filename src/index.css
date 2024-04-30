@@ -21,14 +21,15 @@
   box-sizing: border-box;
   font-family: Inter, Poppins, Roboto, sans-serif;
   margin: 0;
-  
+
 
 }
 
 
 body {
   font-size: 14px;
-  color: #1E0F0F;
+  color: #0a090a;
+  /* color: #1E0F0F; */
 }
 
 p {}

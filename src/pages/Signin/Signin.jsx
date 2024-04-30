@@ -61,6 +61,7 @@ const Signin = () => {
         justifyContent: "center",
         alignItems: "center",
         background: "#F0F0F0",
+        background: "#f4f0ff",
       }}
     >
       <Wrapper>
