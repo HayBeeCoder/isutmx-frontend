@@ -9,7 +9,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { Signin } from "./pages/index.jsx";
+import { Dashboard, Signin } from "./pages/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +30,13 @@ const router = createBrowserRouter([
     path: "signin",
     element: <Signin />,
   },
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+  },
 ]);
 
+{/* <Route path="/dashboard" component={Dashboard} />; */}
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />

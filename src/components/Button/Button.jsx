@@ -1,17 +1,27 @@
 import React from "react";
+import { styled } from "styled-components";
 
-const Button = ({ children }) => {
+const StyledButton = styled.button`
+  padding: 20px 40px;
+  background: #008000;
+  color: white;
+  letterspacing: 1.5;
+  border: 0px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  &:disabled {
+    opacity: 0.3;
+  }
+`;
+
+const Button = ({ onClick, children, disabled }) => {
   return (
-    <button
-      style={{
-        pading: "20px 40px",
-        background: "green",
-        color: "white",
-        letterSpacing: "1.5",
-      }}
-    >
+    <StyledButton disabled={disabled} onClick={onClick}>
       {children}
-    </button>
+    </StyledButton>
   );
 };
 
